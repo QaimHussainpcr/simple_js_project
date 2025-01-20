@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.container {
+    width: 90%;
+    margin: 10px 20px;
+}
+.nav {
+    background-color: #18100d;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.nav ul {
+    list-style: none;
+    display: flex; 
+    gap: 290px; 
+}
+.nav ul li {
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 40px;
+}
+.nav ul  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav ul  a:hover {
+    color: #ff9800;
+}
+.content {
+    background-color: #616060;
+    width: 90%;
+    height: 500px;
+    margin: 5px 30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+p{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 160px;
+}
+
+.clock{
+    width: 300px;
+    height: 8%;
+    background-color: #ff9800;
+    margin: 10px auto;
+    border-radius: 40px;
+    
+}
+span{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+@media (max-width: 1580px) {
+    .nav {
+        flex-direction: row;
+
+    }
+
+    .nav ul {
+        flex-direction: row;
+        gap: 260px;
+    }
+
+}
+@media (max-width: 1256px) {
+    .nav {
+        flex-direction: row;
+
+    }
+
+    .nav ul {
+        flex-direction: row;
+        gap: 150px;
+    }
+
+}
+@media (max-width: 1080px) {
+    .nav {
+        flex-direction: row;
+
+    }
+
+    .nav ul {
+        flex-direction: row;
+        gap: 100px;
+    }
+    .content{
+        margin: 5px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media (max-width: 700px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .content{
+        margin: 5px 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 380px) {
+    .clock{
+        width: 200px;
+        height: 50px;
+        background-color: #ff9800;
+        margin: 5px auto;
+    }
+}
+@media (max-width: 278px) {
+    .clock{
+        width: 140px;
+        height: 30px;
+        background-color: #ff9800;
+        margin: 3px auto;
+    }
+}
