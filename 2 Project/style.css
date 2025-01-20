@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.container {
+    width: 90%;
+    margin: 10px 20px;
+}
+.nav {
+    background-color: #18100d;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.nav ul {
+    list-style: none;
+    display: flex; 
+    gap: 290px; 
+}
+.nav ul li {
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 40px;
+}
+.nav ul  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav ul  a:hover {
+    color: #ff9800;
+}
+.content {
+    background-color: #616060;
+    width: 90%;
+    height: 500px;
+    margin: 5px 60px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+h1{
+    font-size: 25px;
+
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    width: 170px;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    padding: 10px 20px;
+    background-color: #52422a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover{
+    background-color: #ff9800;
+}
+.result{
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+span{
+    margin: 20px auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+@media (max-width: 700px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .content{
+        margin: 5px 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .input{
+        width: 80px;
+    }
+}

@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Project 2</h1>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <a href="/1 Project/index.html">
+                    <li>Project 1 </li>
+                </a>
+                <a href="/index.html">
+                    <li>Home </li>
+                </a>
+                <a href="/3 Project/index.html">
+                    <li>Project 3 </li>
+                </a>
+                <a href="/4 Project/index.html">
+                    <li>Project 4 </li>
+                </a>
+            </ul>
+        </div>
+        <div class="content">
+            <form action="">
+                <h2>Body mass index Calculator</h2>
+                <label for="">Height in CM: <input type="number" placeholder="Enter Your Heght in CM" id="height"></label><br><br>
+                <label for="">Weight in Kg: <input type="number" placeholder="Enter Your Weight in CM" id="weight"></label><br><br>
+                <button>Calculate</button>
+                <div class="result" id="result"></div>
+
+                <h3>BMI Weight Guideance</h3>
+            <p><span>Underweight :</span> Less than 18.5</p>
+            <p><span>Healthy Weight :</span> 18.5 to less than 25</p>
+            <p><span>Overweight :</span> 25 to less than 30</p>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
