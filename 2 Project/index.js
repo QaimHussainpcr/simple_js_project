@@ -24,6 +24,8 @@ form.addEventListener('submit', (e) => {
             result.innerHTML += `<span> :Healthy Weight</span>`
         }else if(bmi >= 25 && bmi < 30){
             result.innerHTML += `<span> :Overweight</span>`
+        }else{
+            result.innerHTML += `<span> :Obese</span>`
         }
     }
 });
