@@ -12,7 +12,7 @@ body {
 .nav {
     background-color: #18100d;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ body {
 .nav ul {
     list-style: none;
     display: flex; 
-    gap: 290px; 
+    gap: 210px; 
 }
 .nav ul li {
     padding: 15px;
