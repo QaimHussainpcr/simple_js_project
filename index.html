@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,12 @@
             box-sizing: border-box;
             background-color: #333;
         }
+
         .container {
             width: 97%;
-            margin: 10px 20px;
+            margin: 10px 10px;
         }
+
         .nav {
             background-color: #18100d;
             color: #fff;
@@ -24,27 +27,29 @@
             justify-content: space-between;
             align-items: center;
             border-radius: 10px;
-            width: 97%;
+  
         }
+
         .nav ul {
             list-style: none;
-            display: flex; 
-            gap: 220px; 
-            width: 100%;
+            display: flex;
+            gap: 150px;
         }
+
         .nav ul li {
-            padding: 15px 35px;
+            padding: 15px ;
             background-color: aqua;
             border-radius: 40px;
         }
-        .nav ul  a {
+
+        .nav ul a {
             text-decoration: none;
             color: black;
-            font-size: 15px;
+            font-size: 18px;
             transition: 0.3s;
         }
 
-        .nav ul  a:hover {
+        .nav ul a:hover {
             color: #ff9800;
         }
 
@@ -56,6 +61,7 @@
             gap: 20px;
             margin: 30px 20px;
         }
+
         .content a {
             text-decoration: none;
             color: black;
@@ -66,51 +72,154 @@
             width: 90%;
             border-radius: 50px;
         }
+
         .content a:hover {
             color: #ff9800;
         }
+
         @media (max-width: 1580px) {
+            .nav {
+                flex-direction: row;
+
+            }
+
+            .nav ul {
+                flex-direction: row;
+                gap: 150px;
+            }
+
+        }
+
+        @media (max-width: 1400px) {
+            .nav {
+                flex-direction: row;
+
+            }
+
+            .nav ul {
+                flex-direction: row;
+                gap: 130px;
+            }
+
+        }
+        @media (max-width: 1280px) {
+            .nav {
+                flex-direction: row;
+
+            }
+
+            .nav ul {
+                flex-direction: row;
+                gap: 100px;
+            }
+
+        }
+        @media (max-width: 1125px) {
+            .nav {
+                flex-direction: row;
+
+            }
+
+            .nav ul {
+                flex-direction: row;
+                gap: 80px;
+            }
+
+        }
+
+        @media (max-width: 1080px) {
+            .nav {
+                flex-direction: row;
+
+            }
+
+            .nav ul {
+                flex-direction: row;
+                gap: 70px;
+            }
+
+            .content {
+                margin: 5px 20px;
+                align-items: center;
+                text-align: center;
+            }
+
+        }
+
+        @media (max-width: 965px) {
     .nav {
         flex-direction: row;
-
-    }
-
-    .nav ul {
-        flex-direction: row;
-        gap: 210px;
-    }
-
-}
-@media (max-width: 1256px) {
-    .nav {
-        flex-direction: row;
-
-    }
-
-    .nav ul {
-        flex-direction: row;
-        gap: 150px;
-    }
-
-}
-@media (max-width: 1080px) {
-    .nav {
-        flex-direction: row;
-
-    }
-
-    .nav ul {
-        flex-direction: row;
-        gap: 100px;
-    }
-    .content{
-        margin: 5px 20px;
         align-items: center;
         text-align: center;
     }
 
+    .nav ul {
+        flex-direction: row;
+        gap: 55px;
+    }
+
+    .content {
+        margin: 5px 10px;
+        align-items: center;
+        text-align: center;
+    }
 }
-@media (max-width: 700px) {
+
+@media (max-width: 900px) {
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        gap: 45px;
+    }
+
+    .content {
+        margin: 5px 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 830px) {
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .content {
+        margin: 5px 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 720px) {
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .content {
+        margin: 5px 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 660px) {
     .nav {
         flex-direction: column;
         align-items: center;
@@ -121,49 +230,91 @@
         flex-direction: column;
         gap: 10px;
     }
-    .content{
+
+    .content {
         margin: 5px 10px;
         align-items: center;
         text-align: center;
     }
 }
-@media (max-width: 420px) {
-    h1 {
-        color: #fff;
-        font-size: 40px;
-        margin-top: 5px;
+@media (max-width: 555px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-}
-@media (max-width: 278px) {
-    h1 {
-        color: #fff;
-        font-size: 40px;
-        margin-top: 3px;
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
+   
 }
 
+        @media (max-width: 420px) {
+            h1 {
+                color: #fff;
+                font-size: 40px;
+                margin-top: 5px;
+            }
+        }
 
+        @media (max-width: 278px) {
+            h1 {
+                color: #fff;
+                font-size: 40px;
+                margin-top: 3px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="nav">
             <ul>
-                <a href="1 Project/index.html"><li>Project 1 </li></a>
-                <a href="2 Project/index.html"><li>Project 2 </li></a>
-                <a href="3 Project/index.html"><li>Project 3 </li></a>
-                <a href="4 Project/index.html"><li>Project 4 </li></a>
-                <a href="5 Project/index.html"><li>Project 5 </li></a>
+                <a href="1 Project/index.html">
+                    <li>Project 1 </li>
+                </a>
+                <a href="2 Project/index.html">
+                    <li>Project 2 </li>
+                </a>
+                <a href="3 Project/index.html">
+                    <li>Project 3 </li>
+                </a>
+                <a href="4 Project/index.html">
+                    <li>Project 4 </li>
+                </a>
+                <a href="5 Project/index.html">
+                    <li>Project 5 </li>
+                </a>
+                <a href="6 Project/index.html">
+                    <li>Project 6 </li>
+                </a>
             </ul>
         </div>
         <div class="content">
-            <a href="1 Project/index.html"> <h3>Project 1 : Color Changer</h3></a>
-            <a href="2 Project/index.html"><h3>Project 2 : Body mass index Calculator (BMI)</h3></a>
-            <a href="3 Project/index.html"><h3>Project 3 : Digital Clock</h3></a>
-            <a href="4 Project/index.html"><h3>Project 4 : Guess A Number</h3></a>
-            <a href="5 Project/index.html"><h3>Project 5 : Random Color Changer</h3></a>
+            <a href="1 Project/index.html">
+                <h3>Project 1 : Color Changer</h3>
+            </a>
+            <a href="2 Project/index.html">
+                <h3>Project 2 : Body mass index Calculator (BMI)</h3>
+            </a>
+            <a href="3 Project/index.html">
+                <h3>Project 3 : Digital Clock</h3>
+            </a>
+            <a href="4 Project/index.html">
+                <h3>Project 4 : Guess A Number</h3>
+            </a>
+            <a href="5 Project/index.html">
+                <h3>Project 5 : Random Color Changer</h3>
+            </a>
+            <a href="6 Project/index.html">
+                <h3>Project 6 : Keyboard Check</h3>
+            </a>
         </div>
     </div>
-    
+
 </body>
+
 </html>
